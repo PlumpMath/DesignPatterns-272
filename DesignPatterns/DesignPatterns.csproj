@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CFB1569-5356-41E2-8DF4-7CE28541C1D0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavioral\Blackboard\Blackboard.cs" />
+    <Compile Include="Behavioral\Blackboard\BlackboardRepository.cs" />
+    <Compile Include="Behavioral\Blackboard\ControllShell.cs" />
+    <Compile Include="Behavioral\Blackboard\Items.cs" />
+    <Compile Include="Behavioral\Blackboard\KnowledgeSources.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\ChainOfResponsibility.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Informers.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Messaging.cs" />
+    <Compile Include="Behavioral\Command\Circuit.cs" />
+    <Compile Include="Behavioral\Command\CircuitCommands.cs" />
+    <Compile Include="Behavioral\Command\Command.cs" />
+    <Compile Include="Behavioral\Command\ICommand.cs" />
+    <Compile Include="Behavioral\Interpreter\Context.cs" />
+    <Compile Include="Behavioral\Interpreter\Expression.cs" />
+    <Compile Include="Behavioral\Interpreter\Interpreter.cs" />
+    <Compile Include="Behavioral\Interpreter\NonterminalExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\TerminalExpression.cs" />
+    <Compile Include="Behavioral\Iterator\Item.cs" />
+    <Compile Include="Behavioral\Iterator\Iterable.cs" />
+    <Compile Include="Behavioral\Iterator\Iterator.cs" />
+    <Compile Include="Behavioral\Mediator\Component.cs" />
+    <Compile Include="Behavioral\Mediator\Mediator.cs" />
+    <Compile Include="Behavioral\Mediator\Message.cs" />
+    <Compile Include="Behavioral\Mediator\Regulator.cs" />
+    <Compile Include="Behavioral\Memento\Empire.cs" />
+    <Compile Include="Behavioral\Memento\Memento.cs" />
+    <Compile Include="Behavioral\NullObject\Beer.cs" />
+    <Compile Include="Behavioral\NullObject\NullObject.cs" />
+    <Compile Include="Behavioral\Observer\FootballFan.cs" />
+    <Compile Include="Behavioral\Observer\FootballGame.cs" />
+    <Compile Include="Behavioral\Observer\Observer.cs" />
+    <Compile Include="Behavioral\Servant\HR.cs" />
+    <Compile Include="Behavioral\Servant\IPayable.cs" />
+    <Compile Include="Behavioral\Servant\Payables.cs" />
+    <Compile Include="Behavioral\Servant\Servant.cs" />
+    <Compile Include="Behavioral\Specification\BooleanSpecifications.cs" />
+    <Compile Include="Behavioral\Specification\ExampleSpecifications.cs" />
+    <Compile Include="Behavioral\Specification\Specification.cs" />
+    <Compile Include="Behavioral\State\Life.cs" />
+    <Compile Include="Behavioral\State\State.cs" />
+    <Compile Include="Behavioral\State\States.cs" />
+    <Compile Include="Behavioral\Strategy\BillingStrategies.cs" />
+    <Compile Include="Behavioral\Strategy\Customer.cs" />
+    <Compile Include="Behavioral\Strategy\Strategy.cs" />
+    <Compile Include="Behavioral\Template\OperatingSystem.cs" />
+    <Compile Include="Behavioral\Template\OperatingSystems.cs" />
+    <Compile Include="Behavioral\Template\Template.cs" />
+    <Compile Include="Behavioral\Visitor\Car.cs" />
+    <Compile Include="Behavioral\Visitor\CarVisitors.cs" />
+    <Compile Include="Behavioral\Visitor\Visitor.cs" />
+    <Compile Include="Creational\AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Application.cs" />
+    <Compile Include="Creational\AbstractFactory\IButton.cs" />
+    <Compile Include="Creational\AbstractFactory\IGUIFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\OSXButton.cs" />
+    <Compile Include="Creational\AbstractFactory\OSXFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\WinButton.cs" />
+    <Compile Include="Creational\AbstractFactory\WinFactory.cs" />
+    <Compile Include="Creational\Builder\Ball.cs" />
+    <Compile Include="Creational\Builder\BallBuilder.cs" />
+    <Compile Include="Creational\Builder\Builder.cs" />
+    <Compile Include="Creational\Builder\BasketballDirector.cs" />
+    <Compile Include="Creational\Builder\FootballDirector.cs" />
+    <Compile Include="Creational\Builder\HandballDirector.cs" />
+    <Compile Include="Creational\Builder\IBallBuilder.cs" />
+    <Compile Include="Creational\Factory\Factory.cs" />
+    <Compile Include="Creational\Factory\InstrumentFactory.cs" />
+    <Compile Include="Creational\Factory\Guitar.cs" />
+    <Compile Include="Creational\Factory\IInstrument.cs" />
+    <Compile Include="Creational\Factory\InstrumentType.cs" />
+    <Compile Include="Creational\Factory\Piano.cs" />
+    <Compile Include="Creational\Factory\Violin.cs" />
+    <Compile Include="Creational\LazyInitialization\Banana.cs" />
+    <Compile Include="Creational\LazyInitialization\LazyInitialization.cs" />
+    <Compile Include="Creational\LazyInitialization\PeeledBanana.cs" />
+    <Compile Include="Creational\Multiton\BirthdayParties.cs" />
+    <Compile Include="Creational\Multiton\BirthdayParty.cs" />
+    <Compile Include="Creational\Multiton\Multiton.cs" />
+    <Compile Include="Creational\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Creational\ObjectPool\Person.cs" />
+    <Compile Include="Creational\ObjectPool\Pool.cs" />
+    <Compile Include="Creational\ObjectPool\Swimmer.cs" />
+    <Compile Include="Creational\Prototype\Cell.cs" />
+    <Compile Include="Creational\Prototype\Eukaryote.cs" />
+    <Compile Include="Creational\Prototype\Prokaryote.cs" />
+    <Compile Include="Creational\Prototype\Prototype.cs" />
+    <Compile Include="Creational\RAII\Breath.cs" />
+    <Compile Include="Creational\RAII\Human.cs" />
+    <Compile Include="Creational\RAII\RAII.cs" />
+    <Compile Include="Creational\Singleton\Singleton.cs" />
+    <Compile Include="Creational\Singleton\Universe.cs" />
+    <Compile Include="IRunnable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runner.cs" />
+    <Compile Include="Structural\Adapter\Adapter.cs" />
+    <Compile Include="Structural\Adapter\Hermaphrodite.cs" />
+    <Compile Include="Structural\Adapter\HermaphroditeAdapter.cs" />
+    <Compile Include="Structural\Adapter\Man.cs" />
+    <Compile Include="Structural\Adapter\Woman.cs" />
+    <Compile Include="Structural\Bridge\Bridge.cs" />
+    <Compile Include="Structural\Bridge\EnglishText.cs" />
+    <Compile Include="Structural\Bridge\GermanText.cs" />
+    <Compile Include="Structural\Bridge\IFont.cs" />
+    <Compile Include="Structural\Bridge\Inconsolata.cs" />
+    <Compile Include="Structural\Bridge\IText.cs" />
+    <Compile Include="Structural\Bridge\Terminus.cs" />
+    <Compile Include="Structural\Composite\AppleTree.cs" />
+    <Compile Include="Structural\Composite\Composite.cs" />
+    <Compile Include="Structural\Composite\IHarvestable.cs" />
+    <Compile Include="Structural\Composite\Orchard.cs" />
+    <Compile Include="Structural\Composite\PearTree.cs" />
+    <Compile Include="Structural\Decorator\BabyCornNoodles.cs" />
+    <Compile Include="Structural\Decorator\OnionNoodles.cs" />
+    <Compile Include="Structural\Decorator\VegetableNoodles.cs" />
+    <Compile Include="Structural\Decorator\Decorator.cs" />
+    <Compile Include="Structural\Decorator\INoodles.cs" />
+    <Compile Include="Structural\Decorator\LoMein.cs" />
+    <Compile Include="Structural\Decorator\MushroomNoodles.cs" />
+    <Compile Include="Structural\Decorator\Wonton.cs" />
+    <Compile Include="Structural\Facade\C.cs" />
+    <Compile Include="Structural\Facade\CmajorChord.cs" />
+    <Compile Include="Structural\Facade\E.cs" />
+    <Compile Include="Structural\Facade\Facade.cs" />
+    <Compile Include="Structural\Facade\G.cs" />
+    <Compile Include="Structural\Facade\INote.cs" />
+    <Compile Include="Structural\Flyweight\Flyweight.cs" />
+    <Compile Include="Structural\Flyweight\HotelDeVille.cs" />
+    <Compile Include="Structural\Flyweight\Menu.cs" />
+    <Compile Include="Structural\Flyweight\MenuItem.cs" />
+    <Compile Include="Structural\Flyweight\Order.cs" />
+    <Compile Include="Structural\MarkerInterface\IMarker.cs" />
+    <Compile Include="Structural\MarkerInterface\Markable.cs" />
+    <Compile Include="Structural\MarkerInterface\MarkerInterface.cs" />
+    <Compile Include="Structural\Module\Module.cs" />
+    <Compile Include="Structural\Module\Symphony9.cs" />
+    <Compile Include="Structural\Proxy\IMovie.cs" />
+    <Compile Include="Structural\Proxy\Movie.cs" />
+    <Compile Include="Structural\Proxy\Proxy.cs" />
+    <Compile Include="Structural\Proxy\ProxyMovie.cs" />
+    <Compile Include="Structural\Twin\Twin.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
